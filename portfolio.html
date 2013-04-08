@@ -1,0 +1,255 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<title>Adam Bertrand - Portfolio Site</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<!-- Soli Deo Gloria, "To God alone the praise be given for what's here in to man's use written." -Johann Sebastian Bach, Little Organ Book, 1714 -->  <meta name="description" content="">
+	<meta name="author" content="Adam Bertrand">
+	<meta name="description" content="Adam Bertrand's Portfolio Website and Blog">
+	<meta name="keywords" content="Adam Bertrand, freelance web designer, web design, web development, portfolio site, web design blog, professional web design">
+	<meta name="viewport" content="width=980px">
+	<!-- IE9 Site Pinning Actions -->
+	<meta name="application-name" content="Adam Bertrand - Portfolio Site" />
+	<meta name="msapplication-tooltip" content="I Love to Design Websites" />
+	<meta name="msapplication-starturl" content="http://www.adam-bertrand.com/" />
+	<meta name="msapplication-navbutton-color" content="#004677" />
+	<meta name="msapplication-task" content="name=Home; action-uri=http://www.adam-bertrand.com; icon-uri=./images/favicon_home.ico" />
+	<meta name="msapplication-task" content="name=About; action-uri=http://www.adam-bertrand.com/about.html; icon-uri=./images/favicon_user.ico" />
+	<meta name="msapplication-task" content="name=Portfolio; action-uri=http://www.adam-bertrand.com/portfolio.html; icon-uri=./images/favicon_image.ico" />
+	<meta name="msapplication-task" content="name=Contact; action-uri=http://www.adam-bertrand.com/contact.html; icon-uri=./images/favicon_mail.ico" />
+	
+	<link rel="shortcut icon" href="./favicon.ico">
+	<link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="./apple-touch-icon.png">
+	
+	<link rel="stylesheet" href="./css/style.css?v=2">
+	
+	<!-- Uncomment if you are specifically targeting less enabled mobile browsers
+	<link rel="stylesheet" media="handheld" href="css/handheld.css?v=2">  -->
+	
+	<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+	<script>window.jQuery || document.write("<script src='js/libs/jquery-1.7.1.min.js'>\x3C/script>")</script>
+	<script src="js/libs/date.js"></script>	
+	
+	<script src="js/libs/modernizr-1.7.min.js"></script>
+	
+	<!-- FancyBox Scripts and CSS files-->
+	<script src="fancybox/jquery.fancybox-1.3.4.js" type="text/javascript" charset="utf-8"></script>
+	<script src="fancybox/jquery.fancybox-1.3.4.pack.js" type="text/javascript" charset="utf-8"></script>
+	
+	<link rel="stylesheet" href="fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+				
+			$(".single-image").fancybox();
+			
+			$(".inline").fancybox({
+				'hideOnContentClick': true
+			});
+					
+			$(".grouped-elements").fancybox({
+				'transitionIn'	:	'elastic',
+				'transitionOut'	:	'elastic',
+				'speedIn'		:	600, 
+				'speedOut'		:	200, 
+				'overlayShow'	:	false
+			});
+			
+			/* code for the copyright year */
+			$('.currentYear').html(new Date().toString('yyyy'));
+		});
+	</script>
+</head>
+
+<body>
+	<div id="container">
+		<div id="header" role="banner">
+			<a class="logo" href="http://www.adam-bertrand.com"><img id="logo" src="./images/AB-logo.png" alt="Adam Bertrand" /></a>
+			<div id="site-title">
+				<h1><a href="/" title="Go Home">Adam Bertrand</a></h1>
+			</div>
+		</div>
+		<nav class="small" role="navigation">
+		<ul>
+			<li><a class="about" href="about.html" title="About">about</a></li>
+			<li><a class="portfolio" href="portfolio.html" title="Portfolio">portfolio</a></li>
+			<li><a class="blog" href="http://www.adam-bertrand.com/blog/" title="Blog">blog</a></li>
+			<li><a class="contact" href="contact.html" title="Contact">contact</a></li>
+		</ul>
+		</nav>
+		<div id="main">
+			<div id="content" role="main">
+				<h2 class="page_title">Latest Web Work</h2>
+				<div class="project">
+					<div class="project-text">
+						<h2 class="project-title">Walton Scoreboards<span class="project-year"></span></h2>
+						<p class="project-techniques">HTML5 | CSS3 | Photoshop </p>
+						<p class="project-description">Walton Scoreboards specializes in supplying digital signage to western style events, particularly rodeos and state fairs. They needed an updated design to highlight their services with a simple and strong call to action.</p>
+						<p class="project-description">The solution was a mobile-first, responsively designed website. Targeting mobile devices and desktop devices.</p>
+					</div>
+					<div class="portfolio-pic">
+					<a href="http://www.waltonscoreboards.com/"><img  src="./images/wsb.png" title="Click to Visit Site" alt="Walton Scoreboards Screen Shot" /></a>
+					</div>
+				</div>
+				<div class="hr"><hr /></div>
+				<div class="project">
+					<div class="project-text">
+						<h2 class="project-title">The Park Laboratory <span class="project-year"></span></h2>
+						<p class="project-techniques">HTML5 | CSS3 | Photoshop </p>
+						<p class="project-description">This site is for Professor In-Hyun Park's stem cell research lab which is part of the Yale Stem Cell Center | Yale School of Medicine | Yale University in New Haven, CT.</p>
+					</div>
+					<div class="portfolio-pic">
+					<a href="http://medicine.yale.edu/labs/park/"><img  src="./images/PSCL.jpg" title="Click to Visit Site" alt="The Park Stem Cell Laboratory Website Screen Shot" /></a>
+					</div>
+				</div>
+				<div class="hr"><hr /></div>
+				<div class="project">
+					<div class="project-text">
+						<h2 class="project-title">Dakota Prairie Outdoors <span class="project-year"></span></h2>
+						<p class="project-techniques">XHTML | CSS | PHP | Photoshop | Illustrator</p>
+						<p class="project-description">Dakota Prairie Outdoors is a hunting and fishing information radio program that airs five days a week, Monday through Friday across North and South Dakota.</p><p class="project-description">The program host, Scott Bachmeier, needed a logo design and a site built to highlight his show, allow the online listening of current and archived shows, display photos of his achievements and current happenings in the Dakotas through a blog.</p>
+						<p class="project-description">The use of an authentic photo of North Dakota and wood background sets the mood for the site. The use of PHP and <a href="http://www.longtailvideo.com/">LongTail's JW Flash player</a> allow for the dynamic access of the current radio program on the landing page and on the archive page. Cohesive integration with a Wordpress blog allows users to access further community content.
+						<p class="project-description"><strong>Highlights:</strong> PHP and MySQL Database driven content combined with the <a href="http://www.longtailvideo.com/">LongTail JW Flash player</a>.</p>
+					</div>
+					<div class="portfolio-pic">
+					<a href="http://www.dakotaprairieoutdoors.com/"><img  src="./images/DPO.jpg" title="Click to Visit Site" alt="Dakota Prairie Outdoors Website Screen Shot" /></a>
+					</div>
+				</div>
+				<div class="hr"><hr /></div>
+				<div class="project">
+					<div class="project-text">
+						<h2 class="project-title">Soonchunhyang University Asian Studies <span class="project-year"></span></h2>
+						<p class="project-techniques">XHTML | CSS | Wordpress | PHP | MySQL | Photoshop</p>
+						<p class="project-description">Soonchunhyang University is a leader in international studies programming in Korea partnering with 77 universities in the US, Europe, China, Australia, and throughout Asia.</p><p class="project-description">They needed an information site for prospective international English speaking students who are interested in their Asian Studies study abroad program, a place for students to share photos and a bulletin board for making general announcements to their currently enrolled international students.</p>
+					</div>
+					<div class="portfolio-pic">
+					<a href="" style="cursor:default;"><!-- http://astudies.sch.ac.kr --><img  src="./images/SCH.jpg" title="" alt="Soonchunhyang University Asian Studies Program Website Screen Shot" /></a>
+					</div>
+				</div>
+				<div class="hr"><hr /></div>
+				<div class="project">
+					<div class="project-text">
+						<h2 class="project-title">Bachmeier Chiropractic <span class="project-year"></span></h2>
+						<p class="project-techniques">XHTML | CSS | Illustrator | Photoshop</p>
+						<p class="project-description">Bachmeier Chiropractic specializes in sports medicine and chiropractic care.</p><p class="project-description">The owner, Dr. Dixie Bachmeier, needed a logo design and a brochure website to highlight her services and location.</p>
+						<a href="http://www.bachmeierchiro.com" title="BachmeierChiro.com">www.bachmeierchiro.com</a>
+					</div>
+					<div class="portfolio-pic">
+<a class="single-image" href="./images/projectDetails.jpg"><img src="./images/BC.jpg" alt=""/></a>
+					</div>
+				</div>
+				<div class="hr"><hr /></div>
+				<!--h2 class="page_title">Latest Print Work</h2>
+				<div class="project">
+					<div class="project-text">
+						<h2 class="project-title">Soonchunhyang University <br />Winter 2010 English Wonderland Camp Memory Book <span class="project-year">(2011)</span></h2>
+						<p class="project-techniques">InDesign | Photoshop | Illustrator</p>
+						<p class="project-description">Soonchunhyang University, a leader in English Education in Korea, hosts biannual English camps, one in the winter and one in the summer. They desired printed material to highlight their 2010 winter English camp.</p><p class="project-description">The solution was to design and print a camp memory book, similar in nature to a Western style school yearbook. It features a logo and title embossed soft cover and spine, as well as 109 full color pages printed on B5 sized paper. It highlights all of the campers and activities at the camp for parents and campers to enjoy looking back at. It was designed, assembled, and printed in 4 weeks.</p>
+					</div>
+					<div class="portfolio-pic">
+					<a href="./SCH_MemoryBook.html" title="SCH Winter 2010 English Wonderland Camp Memory Book"><img  src="./images/SCH_MemoryBook.jpg" title="Click to flip through the PDF (16.7 MB)" alt="SCH Camp Memory Book Snapshot" /></a>
+					</div>
+				</div>
+				<div class="hr"><hr /></div>
+				<div class="project">
+					<div class="project-text">
+						<h2 class="project-title">Soonchunhyang University <br />School of Global Education &amp; Exchange <br />English Writing Center Banner <span class="project-year">(2010)</span></h2>
+						<p class="project-techniques">Photoshop</p>
+						<p class="project-description">Soonchunhyang University, a leader in English Education in Korea, established a trial English Writing Center for their students and faculty.</p><p class="project-description">With a deadline of only 24 hours, they needed a banner designed to highlight the new Writing Center's opening. The banner needed to communicate where and when the writing center would be open. An istockphoto.com image was chosen along with a classical typeface. This conveys the elegance of traditional handwriting, which embodies the one-on-one attention of the writing center staff for each user of the center.</p>
+					</div>
+					<div class="portfolio-pic">
+<a class="single-image" href="./images/SCH_WC_big.jpg"><img src="./images/SCH_WC.jpg" alt=""/></a> 
+					</div>
+				</div>
+				<div class="hr"><hr /></div>
+				<div class="project">
+					<div class="project-text">
+						<h2 class="project-title">Soonchunhyang University <br />School of Global Education &amp; Exchange International Teacher's Handbook <span class="project-year">(2008-2010)</span></h2>
+						<p class="project-techniques">InDesign | Photoshop | Illustrator</p>
+						<p class="project-description">Soonchunhyang University is a Korean leader in English education. They employ over 30 native English speaking instructors and coordinate an additional 40 plus native English speakers that work for the public schools in the city of Asan, South Korea.</p><p class="project-description">With so many native English speakers there is a strong need for having a teacher's handbook to life in Korea and Asan in particular. I took it upon myself to initiate the project and provided the cover design, layout design, and wrote the content for the 89 page handbook for the 2008, 2009, and 2010 academic years. </p>
+					</div>
+					<div class="portfolio-pic">
+<a class="grouped-elements" rel="handbook" href="./images/tHandbook/cover.jpg"><img src="./images/3D-TeachersGuide.jpg" alt=""/></a> 
+<a class="grouped-elements" rel="handbook" href="./images/tHandbook/TOC.jpg"></a> 
+<a class="grouped-elements" rel="handbook" href="./images/tHandbook/spread14-15.jpg"></a> <br />
+					<a href="./TeachersGuide_2010.html" target="_blank" title="Full Book">View Complete Book (4MB)</a>
+
+					</div>
+				</div>
+				<div class="hr"><hr /></div-->
+				<h2 class="page_title">Curriculum Vitae</h2>
+				<div class="project">
+					<div class="project-text">
+						<!--h2 class="project-title">Summary <span class="project-year">(2011)</span></h2>
+						<ul>
+							<li>5 years of design experience</li>
+							<li>5 years of web design experience</li>
+							<li>Corporate and freelance experience</li>
+							<li>Engineering and education industry experience</li>
+						</ul-->
+						<p class="project-description">Download my current CV <a href ="./AdamBertrand_CV_2012.pdf">here</a>.</p>
+					</div>
+					<div class="portfolio-pic">
+					<a href="cv.html"><img  src="./images/cv.jpg" title="Current CV" alt="Adam Bertrand Curriculum Vitae" /></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<div id="footer">
+			<p class="footer" role="contentinfo">&copy; 2010&ndash;<span class="currentYear"></span> Adam Bertrand. All rights reserved.</p>
+			<ul id="sn">
+				<li><a id="linkedin" title="Linkedin" target="_blank" href="http://www.linkedin.com/in/adambertrand"></a></li>
+				<li><a id="facebook" title="Facebook" target="_blank" href="http://www.facebook.com/adam.bertrand1"></a></li>
+				<li><a id="twitter" title="Twitter" target="_blank" href="http://twitter.com/ajbertra91"></a></li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+	</div> <!--! end of #container -->
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+
+  <!-- scripts concatenated and minified via ant build script-->
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+  <!-- end scripts-->
+
+
+  <!--[if lt IE 7 ]>
+    <script src="js/libs/dd_belatedpng.js"></script>
+    <script>DD_belatedPNG.fix("img, .png_bg"); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
+  <![endif]-->
+
+
+  <!-- mathiasbynens.be/notes/async-analytics-snippet Change UA-XXXXX-X to be your site's ID -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12092227-6']);
+  _gaq.push(['_setDomainName', '.adam-bertrand.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+$(document).ready(function() { 
+	$('a').click(function() { 
+		_gaq.push(['_trackEvent', 'Links Clicked', 'Links on portfolio.html', $(this).attr('href')]);
+	});
+});
+
+</script>
+
+</body>
+</html>

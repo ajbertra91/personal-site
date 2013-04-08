@@ -1,0 +1,180 @@
+/*
+* styles.css
+* 
+* Main styles for  web site.
+* Author: Benjamin Bertrand
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, figure, footer, header,
+hgroup, menu, nav, section, menu,
+time, mark, audio, video                            { background:transparent; border:0; font-size:100%; margin:0; padding:0; outline:0; vertical-align:baseline; }
+article, aside, figure, footer, header, hgroup, nav, section { display:block; }
+nav ul                                              { list-style:none; }
+blockquote, q                                       { quotes:none; }
+blockquote:before, blockquote:after, q:before, q:after { content:''; content:none; }
+a                                                   { background:transparent; border:0; font-size:100%; margin:0; padding:0; vertical-align:baseline; }
+hr                                                  { border:0; border-top:1px solid #ccc; display:block; height:1px; margin:1em 0; padding:0; }
+del                                                 { text-decoration:line-through; }
+ins                                                 { background-color:#ff9; color:#000; text-decoration:none; }
+mark                                                { background-color:#ff9; color:#000; font-style:italic; font-weight:bold; }
+abbr[title], dfn[title]                             { border-bottom:1px dotted #000; cursor:help; }
+input, select                                       { vertical-align:middle; }
+table                                               { border-collapse:collapse; border-spacing:0; font-size:inherit; font:100%; }
+
+html { overflow-y:scroll; -webkit-font-smoothing:antialiased; }
+body { font:14px Helvetica, Arial,"Nimbus Sans L", "Bitstream Vera Sans", sans-serif; *font-size:small; *font:x-small; line-height:1.5; }
+select, input, textarea { font:99% Helvetica,Arial,"Nimbus Sans L", "Bitstream Vera Sans", sans-serif; }
+code, pre { font-family:"Courier New", monospace, serif; font-size:1em; }
+h1,h2,h3,h4,h5,h6 { font-weight:bold; text-rendering:optimizeLegibility; }
+
+body, select, input, textarea { color:#444; }
+a:active{ outline:none; }
+a:focus { outline:thin dotted; }
+a       { color:#3C8880; }
+a:focus, 
+a:hover { color:#3CC8C0; }
+a:link  { -webkit-tap-highlight-color:#3CC8C0; }
+
+ul { margin-left:30px; }
+ol { list-style-type:decimal; margin-left:30px; }
+
+small { font-size:85%; }
+strong, th { font-weight:bold; }
+
+td, td img { vertical-align:top; }
+sub { font-size:smaller; vertical-align:sub;  }
+sup { font-size:smaller; vertical-align:super; }
+
+pre { padding:15px; white-space:pre; white-space:pre-wrap; white-space:pre-line; word-wrap:break-word; }
+
+input[type="radio"] { vertical-align:text-bottom; }
+input[type="checkbox"] { vertical-align:bottom; *vertical-align:baseline; }
+.ie6 input { vertical-align:text-bottom; }
+button, label,
+input[type=button], 
+input[type=submit] { cursor:pointer; }
+button { overflow:visible; width:auto; }
+
+::-moz-selection { background:#3CC8C0; color:#fff; text-shadow:none; }
+::selection { background:#3CC8C0; color:#fff; text-shadow:none; }
+
+.ie7 img { -ms-interpolation-mode:bicubic; }
+
+.ir             { display:block; text-indent:-999px; overflow:hidden; background-repeat:none; }
+.hidden         { display:none; visibility:hidden; }
+.invisible      { visibility:hidden; }
+.visuallyhidden { position:absolute !important; clip:rect(1px 1px 1px 1px); clip:rect(1px, 1px, 1px, 1px); }
+.flat li        { display:inline; float:left; position: relative; }
+.clearfix:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
+.clearfix       { display:inline-block; }
+* html .clearfix{ height:1%; } /* Hides from IE-mac \*/
+.clearfix       { display:block; }
+
+html            { background-color:#032626; }
+body            { background:#363636 url(../images/bg_body.png) repeat-x top left; color:#444; }
+#container      { background:#e1e1e1; margin:1px auto 0 auto; width:870px; }
+header          { padding:20px 20px 20px; position:relative; }
+header a.logo   { background:transparent url(../images/bertrand-design.png) no-repeat left top; height: 98px; width: 265px; }
+header nav      { right:50px; position:absolute; top:68px; text-transform:uppercase; }
+header nav ul   { height:44px; margin:0; width:auto; }
+header nav ul a { display: block; padding: 10px 20px 10px 20px; list-style-type: none; float: left; text-decoration: none; }
+header nav ul a:focus,
+header nav ul a:hover { text-decoration:underline; }
+#main           { background:transparent url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAyCAYAAACd+7GKAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAEFJREFUCFuFycENgEAQQtEPDdh/K1OVsQDGkzHRye6FAA9ABvDT1uHl5wEm3QBVdVrS4e7mG0nmCfzg1STYNpZ03W1EMXiyQNLsAAAAAElFTkSuQmCC') repeat-x left bottom; padding:20px 20px 70px; }
+footer          { background:#032626 url('data:image/gif;base64,R0lGODlhAQADAPABADBGRuHh4SH/C1hNUCBEYXRhWE1QRD94cGFja2V0IGJlZ2luPSLvu78iIGlJbnN0YW5jZUlEPSJ4bXAuaWlkOkIyQTk3MTQ0N0NCRjExRTA5QjVkPSJyIj8+ACH5BAUAAAEALAAAAAABAAMAAAICDFIAOw==') repeat-x left top; color:#e1e1e1; font-size:11px; margin:0 auto; padding:20px; text-align:center; }
+h1              { color:#010303; font:normal bold 30px/1.2 "Helvetica Nueue",Helvetica,Calibri,Arial,sans; margin-bottom:14px; }
+h2              { color:#010303; font:normal bold 26px/1.2 "Helvetica Nueue",Helvetica,Calibri,Arial,sans; margin-bottom:14px; }
+h3              { color:#010303; font:normal bold 22px/1.2 "Helvetica Nueue",Helvetica,Calibri,Arial,sans; margin-bottom:14px; text-transform:uppercase;}
+h4              { color:#36A8A8; font:normal bold 20px/1.2 "Helvetica Nueue",Helvetica,Calibri,Arial,sans; margin-bottom:14px; }
+h5              { color:#363636; font:normal bold 16px/1.2 "Helvetica Nueue",Helvetica,Calibri,Arial,sans; margin-bottom:14px; text-transform:uppercase; }
+h6              { color:#010303; font:italic bold 12px/1.2 "Helvetica Nueue",Helvetica,Calibri,Arial,sans; margin-bottom:14px; }
+p               { margin-bottom:14px; }
+
+.home .no-slide { margin:0 133px 0 100px; }
+.bio-line       { clear:left; margin:20px 0; }
+.bio-line .img  { float:left; margin:0 10px 0 0; }
+
+/* Slideshow Styles */
+#slideshow {
+    padding:0 50px 0 85px;
+	position: relative;
+}
+
+#slideshow #slidesContainer {
+  margin: 0 auto;
+  width: 710px;
+  height: 366.702px;
+  overflow: auto; /* allow scrollbar */
+  position: relative;
+}
+
+#slideshow #slidesContainer .slide {
+  margin:0 auto;
+  width:740px; 
+  height:366.702px;
+}
+/*  Slideshow controls styles  */
+.control {
+  display:block;
+  width:50px;
+  height:20px;
+  text-indent:-10000px;
+  position:absolute;
+  cursor: pointer;
+}
+#leftControl {
+  top:180px;
+  left:35px;
+  background:transparent url(../images/arrow.png) no-repeat left bottom;
+}
+#rightControl {					
+	top:180px;
+	right:0;
+	background:transparent url(../images/arrow.png) no-repeat -60px bottom;
+}
+#leftControl.over {
+    background-position:0px top;
+}
+#rightControl.over {
+    background-position:-60px top;
+}
+
+
+.slide h2, .slide p {
+  margin:15px;
+  color: #555;
+}
+.slide h2 {
+  font-size: 2em;
+  color:#666;
+  letter-spacing:-1px;
+}
+.slide img {
+	border: 1px solid #666;
+  float:right;
+  margin:0 15px;
+}
+
+
+/*  Print Styles */
+@media print {
+ * { background:transparent !important; color:#444 !important; text-shadow:none; }
+ a, a:visited { color:#444 !important; text-decoration:underline; }
+ a:after { content:" (" attr(href) ")"; }
+ abbr:after { content:" (" attr(title) ")"; }
+ .ir a:after { content:""; }  
+ pre, blockquote { border:1px solid #999; page-break-inside:avoid; }
+ 
+ @page { margin:0.5cm; }
+ img { page-break-inside:avoid; }
+ p, h2, h3 { orphans:3; widows:3; }
+ h2, h3  { page-break-after:avoid; }
+}

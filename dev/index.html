@@ -1,0 +1,77 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title></title>
+<meta name="description" content="">
+
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="css/style.css">
+
+<script src="js/libs/modernizr-2.5.3.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+<script src="js/jcarousellite.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$(".carousel .jCarouselLite").jCarouselLite({
+			btnNext: ".imageSlider .next",
+			btnPrev: ".imageSlider .prev",
+			visible: 1,
+			speed: 500,
+			easing: "easeinout"
+		});
+	});
+</script>
+  
+</head>
+<body>
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+<div id="wrapper">
+	<div id="main-column">
+		<div id="top">
+			<header>
+				<h1>Adam Bertrand | web developer</h1>
+				<nav>
+					<ul>
+						<li><a href="#about">about</a></li>
+						<li><a href="#work">work</a></li>
+						<li><a href="#contact">contact</a></li>
+					</ul>
+				</nav>
+			</header>
+		</div><!-- END #top -->
+		<div role="main">
+			<section id="about">
+				<button class="prev">prev</button>
+				<button class="next">next</button>
+						
+				<div class="carousel">
+					<ul>
+						<li><div class="text"><h2>Welcome</h2><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus donec qu.</p></div><img src="http://lorempixel.com/960/618" alt="" width="960" height="618" ></li>
+						<li><div class="text"><h2>Experience</h2><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus donec qu.</p></div><img src="http://lorempixel.com/960/618" alt="" width="960" height="618" ></li>
+						<li><div class="text"><h2>Personal Style</h2><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus donec qu.</p></div><img src="http://lorempixel.com/960/618" alt="" width="960" height="618" ></li>
+					</ul>
+				</div>
+			</section>
+			<section id="work"></section>
+			<section id="contact"></section>	
+		</div>
+		<footer>
+		
+		</footer>
+	</div><!-- END #main-column -->
+</div><!-- END #wrapper -->
+
+  <script>
+    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+</body>
+</html>

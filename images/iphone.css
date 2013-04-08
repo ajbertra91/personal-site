@@ -1,0 +1,453 @@
+/*
+Theme Name: ab homepage
+Theme URI: http://www.adambertrand.com/
+Description: Adam Bertrand's Porfolio website theme 
+Version: 1.0
+Author: Adam Bertrand
+Author URI:
+Tags: white, custom header, fixed width, two columns
+
+ab homepage
+
+	The CSS, XHTML and design is released under GPL:
+	http://www.opensource.org/licenses/gpl-license.php
+
+*/
+
+/***** BROWSER RESET *****/
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,hr,pre,form,fieldset,input,textarea,p,blockquote { margin:0; padding:0; } 
+th, td { margin: 0; padding: 7px }
+table { border-collapse:collapse; border-spacing:0; }
+fieldset,img { border:0; } 
+address,caption,cite,code,dfn,th,var { font-style:normal; font-weight:normal; } 
+caption,th {font-weight: bold;}
+h1,h2,h3,h4,h5,h6 { font-size:100%; font-weight:bold; } 
+q:before,q:after { content:''; } 
+abbr,acronym { border:0; }
+sup, sub { font-size:0.6em; }
+
+@font-face {
+	font-family: "Bitstream Vera Serif Bold";
+	src: url("./VeraSeBd.ttf");
+}
+
+body {
+	background: #ecefef; 
+	color: #52555d; 
+	font-size: 75%; 
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif; 
+	margin: 0; 
+	padding: 0;
+}
+
+p {
+	color:#52555d; 
+	margin:0; 
+	padding: 0 0 0.5em;
+}
+
+h2.home {
+	font-size: 2em;
+	text-align: center;
+}
+
+h2.page_title {
+	font-size: 2em;
+	margin: 0 0 0 20px;
+	padding: 20px 0;
+}
+
+h3.home {
+	font-size: 1.25em;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 0;
+	text-align: justify;
+	width: 275px;
+}
+
+h2.project-title {
+	font-size: 1.25em;
+	margin: 0;
+	padding: 0;
+}
+
+p.project-techniques {
+	border:1px solid;
+	font-size:1.25em;
+	margin:5px 0 10px;
+	padding:5px;
+}
+
+p.project-description {
+	text-align:justify;
+}
+
+img {
+	outline: none;
+	-moz-outline-style: none;
+	border: 0px;	
+}
+
+#container {
+	background-color: #fff;
+	margin-left: auto;
+	margin-right: auto;
+	position:relative;
+	overflow:hidden;
+	width: 320px;
+}
+
+#header{
+	height:110px;
+	margin:0;
+	padding:0;
+	background: #FFFFFF url(./images/hr.png) no-repeat center bottom;
+}
+
+#header h1 {
+	color:#637C9B;
+	font-family:"Bitstream Vera Serif Bold",serif;
+	font-size:2.5em;
+	font-weight:bold;
+	left:-90px;
+	letter-spacing:-1.2px;
+	margin:0;
+	padding:0;
+	position:relative;
+	text-align:right;
+	text-shadow:1px 1px 1px rgba(0, 0, 0, 0.8);
+	top:10px;
+	z-index:3000;
+}
+
+#header h1 a {
+	color:#637C9B;
+	display:block;
+	text-decoration:none;
+	width:375px;
+}
+
+/* Default navigation states */
+
+nav {
+	position: absolute;
+	top: 57px;
+}
+
+nav ul{
+	clear:both;
+	height:33px;
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+	margin:0 0 0 15px;
+	padding:0;
+	width:320px;
+}
+
+nav li {
+	display: inline;
+	float: left;
+	margin: 0 10px;
+	overflow: hidden;
+	text-indent: -9999px;	
+}
+
+nav li a {
+	width: 100%;
+	height: 100%;
+	display: block;
+	background: url(./images/nav-sprite.png) no-repeat;
+}
+
+
+/* about Button */
+
+nav li.nav-about {width: 77px; height: 33px;}
+nav li.nav-about a {background-position: -12px	0;}
+nav li.nav-about a.selected {background-position: 0px 0;}
+
+/* portfolio Button */
+
+nav li.nav-portfolio {width: 77px; height: 33px;}
+nav li.nav-portfolio a {background-position: -121px 0px;}
+nav li.nav-portfolio a.selected {background-position: -121px 0;}
+
+/* contact Button */
+
+nav li.nav-contact {width: 77px; height: 33px;}
+nav li.nav-contact a {background-position: -231px 0px;}
+nav li.nav-contact a.selected {background-position: -231px 0;}
+
+
+
+
+#main {
+	background-color: #ffffff;
+	overflow: hidden;
+}
+
+.project {
+	float:left;
+	margin:0 0 30px;
+	padding:0 0 15px;
+	width:100%;
+}
+
+.project-text {
+	float: left;
+	position: relative;
+	margin: 0 0 0 85px;
+	clear: left;
+	width: 364px;
+}
+
+span.project-year {
+	font-size: .75em;
+	margin: 0;
+	padding: 0;
+}
+
+#home, #about, #portfolio, #contact {
+	background: url(./images/bg.jpg) no-repeat center top;
+	clear: both;
+	margin: 10px;
+}
+
+#content h1.home {
+	width: 320px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+
+.body_copy {
+	font-size:1.25em;
+	margin:0 20px;
+	padding:0;
+	position:relative;
+	text-align:justify;
+}
+
+
+div.hr { 
+	border-color:#D3D3D3 -moz-use-text-color -moz-use-text-color;
+	border-style:solid none none;
+	border-width:1px medium medium;
+	clear:both;
+	margin:0 0 50px;
+}
+
+div.hr hr { 
+	display: none; 
+}
+
+.portfolio-pic {
+	clear: right;
+	float: right;
+	padding:0;
+	position: relative;
+	margin: 0 24px 20px 0;
+}
+
+.portfolio-pic a img{
+	border: 1px solid #52555d;
+	width: 448px;
+}
+
+.portfolio-pic a:hover img{
+	border: 1px solid #52555d;
+	-webkit-box-shadow: 0 1px 10px rgba(0,0,0,.5);
+	-moz-box-shadow: 0 1px 10px rgba(0,0,0,.5);
+	box-shadow: 0 1px 10px rgba(0,0,0,.5);
+}
+
+a:active, a:link, a:visited color {
+	color: #637c9b;	
+}
+
+a:hover {
+	color: #637c9b;
+	text-decoration: none;
+}
+
+#footer {
+	background-color: #ffffff;
+	background: url(./images/hr.png) no-repeat;
+	height: 122px;
+}
+
+.footer {
+	color: #637c9b;
+	text-align: center;
+	padding: 25px 0 0;
+}
+
+#footer #sn {
+	left:80px;
+	list-style-type:none;
+	margin:20px 0 50px;
+	padding:0;
+	position:absolute;
+}
+
+#footer #sn li {
+	float:left;
+	margin-right:10px;
+}
+
+#footer #sn li a {
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	background: transparent url(./images/sn_links.png) no-repeat scroll 0 0;
+	display: inline-block;
+	height:48px;
+	padding:0;
+	width:48px;
+	clear: left;
+}
+
+#footer #sn li a#linkedin {
+	background-position: 0 -48px;
+}
+
+#footer #sn li a#linkedin:hover {
+	background-position: 0 0;
+}
+
+
+#footer #sn li a#facebook {
+	background-position: -48px -48px;
+}
+
+#footer #sn li a#facebook:hover {
+	background-position: -48px 0;
+}
+
+#footer #sn li a#twitter {
+	background-position: -96px -48px;
+}
+
+#footer #sn li a#twitter:hover {
+	background-position: -96px 0;
+}
+
+.clear {
+	clear: both;
+}
+
+
+/* Contact Form Styling */
+
+#contact-form {
+	float:right;
+	margin-right:23px;
+	width:450px;
+}
+
+
+/* Basic Styling */
+
+fieldset {  
+	border: 1px solid #637c9b; 
+	margin: 1.5em 0 0 0;   
+	padding: 0;  
+}  
+legend {     
+	margin-left: 1em;     
+	padding: 0;     
+	color: #52555d;     
+	font-weight: bold;    
+} 
+fieldset ol {   
+	padding: 1em 1em 0 1em;   
+	list-style: none;  
+}  
+fieldset li {   
+	padding-bottom: 1em;  
+}  
+fieldset.submit {   
+	border-style: none;  
+}
+
+/* Use this for stacked labels and input fields */
+/*
+label {    
+display: block;   
+}
+*/
+
+/* Use this for a left aligned labels */
+
+fieldset {      
+	float: left;      
+	clear: both;      
+	width: 100%;      
+	margin: 0 0 1.5em 0;      
+	padding: 0;            
+	border-top: 1px solid #BFBAB0;
+	border-bottom: 1px solid #BFBAB0;
+	border-left: none;
+	border-right: none;
+	background-color: rgba(255,255,255,0.3);
+}
+
+fieldset li {    
+	float: left;    
+	clear: left;    
+	width: 100%;    
+	padding-bottom: 1em;   
+}
+
+label {            
+	float:left;
+	margin-right:1em;
+	position: relative;
+	width:8.65em;  
+}      
+      
+label em {        
+	position: absolute;        
+	left: 8.75em;        
+	top: 0;       
+}
+  
+fieldset.submit {     
+	float: none;     
+	width: auto;     
+	border-style: none;     
+	padding-left: 127px;     
+	background-color: transparent;     
+	background-image: none;    
+}
+
+
+
+textarea {
+	float:right;
+	margin-right:25px;
+	width:283px;
+}
+
+input.submit {
+	background-color: #fff;
+	border: 1px solid #BFBAB0;
+	color: #52555d;
+	font-size: 1.25em;
+	width: 155px;
+	height: 30px;
+}
+
+input.submit:hover {
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.4);
+	background: #637c9b url(./images/gradient.png) repeat-x 0 -230px;
+	border: 1px solid #52555d;
+	-webkit-box-shadow: 0 1px 7px rgba(0,0,0,.5);
+	-moz-box-shadow: 0 1px 7px rgba(0,0,0,.5);
+	box-shadow: 0 1px 7px rgba(0,0,0,.5);
+}
